@@ -16,10 +16,13 @@ class HomeController: UIViewController {
     //MARK: - App LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
 }
 
 //MARK: Methods
 extension HomeController {
-    
+    func setupViews() {
+        self.title = "Home"
+    }
 }

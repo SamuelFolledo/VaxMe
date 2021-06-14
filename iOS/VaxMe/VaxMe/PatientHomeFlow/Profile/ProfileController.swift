@@ -16,10 +16,13 @@ class ProfileController: UIViewController {
     //MARK: - App LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
 }
 
 //MARK: Methods
 extension ProfileController {
-    
+    func setupViews() {
+        self.title = "Profile"
+    }
 }

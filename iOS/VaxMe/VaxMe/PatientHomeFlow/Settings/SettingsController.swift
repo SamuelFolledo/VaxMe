@@ -16,10 +16,13 @@ class SettingsController: UIViewController {
     //MARK: - App LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
 }
 
 //MARK: Methods
 extension SettingsController {
-    
+    func setupViews() {
+        self.title = "Settings"
+    }
 }

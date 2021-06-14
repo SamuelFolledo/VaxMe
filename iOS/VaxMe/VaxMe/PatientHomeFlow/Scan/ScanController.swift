@@ -16,10 +16,13 @@ class ScanController: UIViewController {
     //MARK: - App LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
 }
 
 //MARK: Methods
 extension ScanController {
-    
+    func setupViews() {
+        self.title = "Scan"
+    }
 }

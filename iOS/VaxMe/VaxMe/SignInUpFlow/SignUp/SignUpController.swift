@@ -26,10 +26,13 @@ class SignUpController: UIViewController {
     //MARK: - App LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
 }
 
 //MARK: Methods
 extension SignUpController {
-    
+    func setupViews() {
+        self.title = "Sign Up"
+    }
 }
