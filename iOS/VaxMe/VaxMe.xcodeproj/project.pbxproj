@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		540EED332676D24B006CF516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EED322676D24B006CF516 /* AppDelegate.swift */; };
 		540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EED342676D24B006CF516 /* SceneDelegate.swift */; };
-		540EED372676D24B006CF516 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EED362676D24B006CF516 /* ViewController.swift */; };
 		540EED3A2676D24B006CF516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540EED382676D24B006CF516 /* Main.storyboard */; };
-		540EED3C2676D24D006CF516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540EED3B2676D24D006CF516 /* Assets.xcassets */; };
 		540EED3F2676D24D006CF516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540EED3D2676D24D006CF516 /* LaunchScreen.storyboard */; };
+		540EED492676D7AD006CF516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540EED482676D7AD006CF516 /* Assets.xcassets */; };
+		541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B1A2676D7F1008309B0 /* BaseSlidingController.swift */; };
+		541E6B1D2676D814008309B0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B1C2676D814008309B0 /* HomeController.swift */; };
+		541E6B202676D824008309B0 /* RecordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B1F2676D824008309B0 /* RecordsController.swift */; };
+		541E6B232676D835008309B0 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B222676D835008309B0 /* ProfileController.swift */; };
+		541E6B262676D842008309B0 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B252676D842008309B0 /* ScanController.swift */; };
+		541E6B292676D851008309B0 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B282676D851008309B0 /* SettingsController.swift */; };
+		541E6B2E2676D9B9008309B0 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2D2676D9B9008309B0 /* SigninController.swift */; };
+		541E6B302676D9C3008309B0 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2F2676D9C3008309B0 /* SignupController.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +28,18 @@
 		540EED2F2676D24B006CF516 /* VaxMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540EED322676D24B006CF516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540EED342676D24B006CF516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		540EED362676D24B006CF516 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		540EED392676D24B006CF516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		540EED3B2676D24D006CF516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		540EED3E2676D24D006CF516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		540EED402676D24D006CF516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540EED482676D7AD006CF516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		541E6B1A2676D7F1008309B0 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
+		541E6B1C2676D814008309B0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		541E6B1F2676D824008309B0 /* RecordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsController.swift; sourceTree = "<group>"; };
+		541E6B222676D835008309B0 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		541E6B252676D842008309B0 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		541E6B282676D851008309B0 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		541E6B2D2676D9B9008309B0 /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
+		541E6B2F2676D9C3008309B0 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +96,9 @@
 			children = (
 				540EED322676D24B006CF516 /* AppDelegate.swift */,
 				540EED342676D24B006CF516 /* SceneDelegate.swift */,
-				540EED362676D24B006CF516 /* ViewController.swift */,
+				541E6B2D2676D9B9008309B0 /* SigninController.swift */,
+				541E6B2F2676D9C3008309B0 /* SignupController.swift */,
+				541E6B2C2676D965008309B0 /* PatientHomeFlow */,
 				540EED462676D53A006CF516 /* Supporting Files */,
 				540EED472676D544006CF516 /* Assets */,
 			);
@@ -102,9 +118,70 @@
 		540EED472676D544006CF516 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				540EED3B2676D24D006CF516 /* Assets.xcassets */,
+				540EED482676D7AD006CF516 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		541E6B1E2676D81A008309B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B1C2676D814008309B0 /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		541E6B212676D82A008309B0 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B1F2676D824008309B0 /* RecordsController.swift */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
+		541E6B242676D838008309B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B222676D835008309B0 /* ProfileController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		541E6B272676D846008309B0 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B252676D842008309B0 /* ScanController.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		541E6B2A2676D855008309B0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B282676D851008309B0 /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		541E6B2B2676D941008309B0 /* BaseSlidingController */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B1A2676D7F1008309B0 /* BaseSlidingController.swift */,
+			);
+			path = BaseSlidingController;
+			sourceTree = "<group>";
+		};
+		541E6B2C2676D965008309B0 /* PatientHomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B2B2676D941008309B0 /* BaseSlidingController */,
+				541E6B1E2676D81A008309B0 /* Home */,
+				541E6B212676D82A008309B0 /* Records */,
+				541E6B272676D846008309B0 /* Scan */,
+				541E6B242676D838008309B0 /* Profile */,
+				541E6B2A2676D855008309B0 /* Settings */,
+			);
+			path = PatientHomeFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540EED3F2676D24D006CF516 /* LaunchScreen.storyboard in Resources */,
-				540EED3C2676D24D006CF516 /* Assets.xcassets in Resources */,
+				540EED492676D7AD006CF516 /* Assets.xcassets in Resources */,
 				540EED3A2676D24B006CF516 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540EED372676D24B006CF516 /* ViewController.swift in Sources */,
+				541E6B292676D851008309B0 /* SettingsController.swift in Sources */,
+				541E6B262676D842008309B0 /* ScanController.swift in Sources */,
+				541E6B232676D835008309B0 /* ProfileController.swift in Sources */,
+				541E6B302676D9C3008309B0 /* SignupController.swift in Sources */,
 				540EED332676D24B006CF516 /* AppDelegate.swift in Sources */,
+				541E6B202676D824008309B0 /* RecordsController.swift in Sources */,
 				540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */,
+				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
+				541E6B2E2676D9B9008309B0 /* SigninController.swift in Sources */,
+				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
