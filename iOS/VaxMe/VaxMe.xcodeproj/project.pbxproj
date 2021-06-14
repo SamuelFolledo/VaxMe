@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,6 @@
 				16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */,
 				DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,12 +83,28 @@
 				540EED322676D24B006CF516 /* AppDelegate.swift */,
 				540EED342676D24B006CF516 /* SceneDelegate.swift */,
 				540EED362676D24B006CF516 /* ViewController.swift */,
+				540EED462676D53A006CF516 /* Supporting Files */,
+				540EED472676D544006CF516 /* Assets */,
+			);
+			path = VaxMe;
+			sourceTree = "<group>";
+		};
+		540EED462676D53A006CF516 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				540EED382676D24B006CF516 /* Main.storyboard */,
-				540EED3B2676D24D006CF516 /* Assets.xcassets */,
 				540EED3D2676D24D006CF516 /* LaunchScreen.storyboard */,
 				540EED402676D24D006CF516 /* Info.plist */,
 			);
-			path = VaxMe;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540EED472676D544006CF516 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				540EED3B2676D24D006CF516 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +373,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NY68F4K3P;
-				INFOPLIST_FILE = VaxMe/Info.plist;
+				INFOPLIST_FILE = "VaxMe/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NY68F4K3P;
-				INFOPLIST_FILE = VaxMe/Info.plist;
+				INFOPLIST_FILE = "VaxMe/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
