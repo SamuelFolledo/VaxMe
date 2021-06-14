@@ -20,9 +20,25 @@ class RecordsController: UIViewController {
     }
 }
 
-//MARK: Methods
+//MARK: Setup Methods
 extension RecordsController {
-    func setupViews() {
-        self.title = "Records"
+    private func setupViews() {
+        configureNavigationBar()
+    }
+    
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.barTintColor = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.title = "Records"
+        let buttonImage = UIImage(systemName: "line.horizontal.3")!.withRenderingMode(.alwaysOriginal)
+        let barButton = UIBarButtonItem(image: buttonImage, style: .plain, target: self, action: #selector(handleOpenMenu))
+        navigationItem.leftBarButtonItem = barButton
+    }
+    
+    // MARK: - @objc Methods
+    
+    @objc private func handleOpenMenu() {
+        guard let slidingController = UIWindow.key?.rootViewController as? BaseSlidingController else { return }
+        slidingController.openMenu()
     }
 }
