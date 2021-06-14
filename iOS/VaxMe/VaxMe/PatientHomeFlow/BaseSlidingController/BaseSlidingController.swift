@@ -40,24 +40,18 @@ class BaseSlidingController: UIViewController {
         return v
     }()
     
-    var rightViewController: UIViewController = UINavigationController(rootViewController: ScoreOverviewController())
+    var rightViewController: UIViewController = UINavigationController(rootViewController: HomeController())
     
     // MARK: - View Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .bolarOffWhite
-        
         setupViews()
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
         view.addGestureRecognizer(panGesture)
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapDismiss))
         darkCoverView.addGestureRecognizer(tapGesture)
-        
-        FirAnalytics.sendUserTypeToAnalytics()
     }
     
     // MARK: - @objc Selector Methods
@@ -114,29 +108,47 @@ class BaseSlidingController: UIViewController {
         closeMenu()
         
         switch menuOption {
-        case .ScoreFactors:
-            rightViewController = UINavigationController(rootViewController: ScoreOverviewController())
+        case .home:
+            rightViewController = UINavigationController(rootViewController: HomeController())
             addMiddleView()
-        case .Chats:
-            rightViewController = UINavigationController(rootViewController: ChatRoomsController())
+        case .records:
+            rightViewController = UINavigationController(rootViewController: RecordsController())
             addMiddleView()
-        case .Application:
-            rightViewController = UINavigationController(rootViewController: CreateApplicationController())
+        case .profile:
+            rightViewController = UINavigationController(rootViewController: ProfileController())
             addMiddleView()
-        case .BolarScoreHistory:
-            rightViewController = UINavigationController(rootViewController: BolarScoreHistoryController())
+        case .scan:
+            rightViewController = UINavigationController(rootViewController: ScanController())
             addMiddleView()
-        case .AccountSettings:
-            rightViewController = UINavigationController(rootViewController: AccountSettingsController())
+        case .settings:
+            rightViewController = UINavigationController(rootViewController: SettingsController())
             addMiddleView()
-        case .Help:
-            rightViewController = UINavigationController(rootViewController: HelpController())
-            addMiddleView()
-        case .Logout:
-            rightViewController = UINavigationController(rootViewController: HelpController())
+        case .logout:
+            rightViewController = UINavigationController(rootViewController: SettingsController())
             addMiddleView()
             showLogoutAlertView()
-            break
+//        case .ScoreFactors:
+//            rightViewController = UINavigationController(rootViewController: ScoreOverviewController())
+//            addMiddleView()
+//        case .Chats:
+//            rightViewController = UINavigationController(rootViewController: ChatRoomsController())
+//            addMiddleView()
+//        case .Application:
+//            rightViewController = UINavigationController(rootViewController: CreateApplicationController())
+//            addMiddleView()
+//        case .BolarScoreHistory:
+//            rightViewController = UINavigationController(rootViewController: BolarScoreHistoryController())
+//            addMiddleView()
+//        case .AccountSettings:
+//            rightViewController = UINavigationController(rootViewController: AccountSettingsController())
+//            addMiddleView()
+//        case .Help:
+//            rightViewController = UINavigationController(rootViewController: HelpController())
+//            addMiddleView()
+//        case .Logout:
+//            rightViewController = UINavigationController(rootViewController: HelpController())
+//            addMiddleView()
+//            showLogoutAlertView()
         }
     }
     
@@ -152,13 +164,12 @@ class BaseSlidingController: UIViewController {
         let logout = UIAlertAction(title: "Logout", style: .destructive) { (_) in
             // Display signInController once the user signs out
             
-            if let _ = Tenant.current {
-                Tenant.removeCurrent(true)
-                UserDefaults.hasLoggedInOrCreatedAccount = false
-
+//            if let _ = Tenant.current {
+//                Tenant.removeCurrent(true)
+//                UserDefaults.hasLoggedInOrCreatedAccount = false
                 self.view.window?.rootViewController = SignInController()
                 self.view.window?.makeKeyAndVisible()
-            }
+//            }
         }
         
         alert.addAction(cancel)
@@ -211,6 +222,7 @@ class BaseSlidingController: UIViewController {
     }
     
     fileprivate func setupViews() {
+        view.backgroundColor = .systemBackground
         view.addSubview(rightView)
         view.addSubview(leftView)
         
