@@ -20,6 +20,21 @@
 		541E6B292676D851008309B0 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B282676D851008309B0 /* SettingsController.swift */; };
 		541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2D2676D9B9008309B0 /* SignInController.swift */; };
 		541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2F2676D9C3008309B0 /* SignUpController.swift */; };
+		541E6B422676DABD008309B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B332676DABD008309B0 /* Constants.swift */; };
+		541E6B432676DABD008309B0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B352676DABD008309B0 /* UIViewController+Extensions.swift */; };
+		541E6B442676DABD008309B0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B362676DABD008309B0 /* UIView+Extensions.swift */; };
+		541E6B452676DABD008309B0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B372676DABD008309B0 /* String+Extensions.swift */; };
+		541E6B462676DABD008309B0 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B382676DABD008309B0 /* UIFont+Extensions.swift */; };
+		541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B392676DABD008309B0 /* UITextView+Extensions.swift */; };
+		541E6B482676DABD008309B0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3A2676DABD008309B0 /* UIColor+Extensions.swift */; };
+		541E6B492676DABD008309B0 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3B2676DABD008309B0 /* UIImage+Extensions.swift */; };
+		541E6B4A2676DABD008309B0 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3C2676DABD008309B0 /* UINavigationController+Extensions.swift */; };
+		541E6B4B2676DABD008309B0 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3D2676DABD008309B0 /* UIStackView+Extensions.swift */; };
+		541E6B4C2676DABD008309B0 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3E2676DABD008309B0 /* UserDefaults+Extensions.swift */; };
+		541E6B4D2676DABD008309B0 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B3F2676DABD008309B0 /* UILabel+Extensions.swift */; };
+		541E6B4E2676DABD008309B0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B402676DABD008309B0 /* Date+Extensions.swift */; };
+		541E6B4F2676DABD008309B0 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B412676DABD008309B0 /* UITextField+Extensions.swift */; };
+		541E6B522676DB92008309B0 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B512676DB92008309B0 /* AppService.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +55,21 @@
 		541E6B282676D851008309B0 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		541E6B2D2676D9B9008309B0 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		541E6B2F2676D9C3008309B0 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		541E6B332676DABD008309B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		541E6B352676DABD008309B0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B362676DABD008309B0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B372676DABD008309B0 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B382676DABD008309B0 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B392676DABD008309B0 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3A2676DABD008309B0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3B2676DABD008309B0 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3C2676DABD008309B0 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3D2676DABD008309B0 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3E2676DABD008309B0 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B3F2676DABD008309B0 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B402676DABD008309B0 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B412676DABD008309B0 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		541E6B512676DB92008309B0 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +128,8 @@
 				540EED342676D24B006CF516 /* SceneDelegate.swift */,
 				541E6B312676DA02008309B0 /* SignInUpFlow */,
 				541E6B2C2676D965008309B0 /* PatientHomeFlow */,
+				541E6B502676DB92008309B0 /* Services */,
+				541E6B322676DABD008309B0 /* Helpers */,
 				540EED462676D53A006CF516 /* Supporting Files */,
 				540EED472676D544006CF516 /* Assets */,
 			);
@@ -186,10 +218,63 @@
 		541E6B312676DA02008309B0 /* SignInUpFlow */ = {
 			isa = PBXGroup;
 			children = (
-				541E6B2D2676D9B9008309B0 /* SignInController.swift */,
-				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
+				541E6B532676DE25008309B0 /* SignIn */,
+				541E6B542676DE2D008309B0 /* SignUp */,
 			);
 			path = SignInUpFlow;
+			sourceTree = "<group>";
+		};
+		541E6B322676DABD008309B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B332676DABD008309B0 /* Constants.swift */,
+				541E6B342676DABD008309B0 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		541E6B342676DABD008309B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B352676DABD008309B0 /* UIViewController+Extensions.swift */,
+				541E6B362676DABD008309B0 /* UIView+Extensions.swift */,
+				541E6B372676DABD008309B0 /* String+Extensions.swift */,
+				541E6B382676DABD008309B0 /* UIFont+Extensions.swift */,
+				541E6B392676DABD008309B0 /* UITextView+Extensions.swift */,
+				541E6B3A2676DABD008309B0 /* UIColor+Extensions.swift */,
+				541E6B3B2676DABD008309B0 /* UIImage+Extensions.swift */,
+				541E6B3C2676DABD008309B0 /* UINavigationController+Extensions.swift */,
+				541E6B3D2676DABD008309B0 /* UIStackView+Extensions.swift */,
+				541E6B3E2676DABD008309B0 /* UserDefaults+Extensions.swift */,
+				541E6B3F2676DABD008309B0 /* UILabel+Extensions.swift */,
+				541E6B402676DABD008309B0 /* Date+Extensions.swift */,
+				541E6B412676DABD008309B0 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		541E6B502676DB92008309B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B512676DB92008309B0 /* AppService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		541E6B532676DE25008309B0 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B2D2676D9B9008309B0 /* SignInController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		541E6B542676DE2D008309B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,15 +392,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				541E6B292676D851008309B0 /* SettingsController.swift in Sources */,
+				541E6B4A2676DABD008309B0 /* UINavigationController+Extensions.swift in Sources */,
+				541E6B4D2676DABD008309B0 /* UILabel+Extensions.swift in Sources */,
+				541E6B422676DABD008309B0 /* Constants.swift in Sources */,
 				541E6B262676D842008309B0 /* ScanController.swift in Sources */,
+				541E6B522676DB92008309B0 /* AppService.swift in Sources */,
+				541E6B4C2676DABD008309B0 /* UserDefaults+Extensions.swift in Sources */,
 				541E6B232676D835008309B0 /* ProfileController.swift in Sources */,
+				541E6B432676DABD008309B0 /* UIViewController+Extensions.swift in Sources */,
+				541E6B442676DABD008309B0 /* UIView+Extensions.swift in Sources */,
+				541E6B4F2676DABD008309B0 /* UITextField+Extensions.swift in Sources */,
 				541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */,
+				541E6B4E2676DABD008309B0 /* Date+Extensions.swift in Sources */,
 				540EED332676D24B006CF516 /* AppDelegate.swift in Sources */,
+				541E6B452676DABD008309B0 /* String+Extensions.swift in Sources */,
 				541E6B202676D824008309B0 /* RecordsController.swift in Sources */,
 				540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */,
 				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
 				541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */,
+				541E6B462676DABD008309B0 /* UIFont+Extensions.swift in Sources */,
 				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
+				541E6B492676DABD008309B0 /* UIImage+Extensions.swift in Sources */,
+				541E6B4B2676DABD008309B0 /* UIStackView+Extensions.swift in Sources */,
+				541E6B482676DABD008309B0 /* UIColor+Extensions.swift in Sources */,
+				541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
