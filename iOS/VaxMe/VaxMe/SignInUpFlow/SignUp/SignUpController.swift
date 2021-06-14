@@ -11,7 +11,7 @@ import SnapKit
  TODO - Ben #2
  [] Build UI
     [] hide/unhide password for password and password2 textfields
-    [] put the stack of textfields in its own view subclass to make it clean and keep VC short
+    [] put the stack of textfields in its own view subclass to make it clean and keep VC short (e.g. name is AuthFormView)
     [] Use AppService to create these textfields and other views to allow reusability
  [] Save that orange/pink color to UIColor+Extensions (get the hex/rgb from Vlad)
  [] Use String+Extensions.swift (not sure if it still works) to update the email and password validator. If both email and passwords are valid, then enable the Sign In button
@@ -137,7 +137,7 @@ class SignUpController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         button.setTitleColor(.systemPink, for: .normal)
         button.setTitle("Sign In", for: .normal)
-        button.addTarget(self, action: #selector(continueButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
         //add border
         button.layer.cornerRadius = 5
         button.layer.borderWidth = 2
@@ -198,5 +198,9 @@ extension SignUpController {
     //MARK: @OBJC func
     @objc func continueButtonTapped() {
         print("Continue Sign up todo - Samuel")
+    }
+    
+    @objc func signInButtonTapped() {
+        dismiss(animated: true, completion: nil)
     }
 }
