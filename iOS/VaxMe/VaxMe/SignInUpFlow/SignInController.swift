@@ -1,5 +1,5 @@
 //
-//  SignupController.swift
+//  SignInController.swift
 //  VaxMe
 //
 //  Created by Samuel Folledo on 6/13/21.
@@ -7,7 +7,7 @@
 
 import SnapKit
 
-class SignupController: UIViewController {
+class SignInController: UIViewController {
     
     //MARK: Properties
     
@@ -20,6 +20,6 @@ class SignupController: UIViewController {
 }
 
 //MARK: Methods
-extension SignupController {
+extension SignInController {
     
 }

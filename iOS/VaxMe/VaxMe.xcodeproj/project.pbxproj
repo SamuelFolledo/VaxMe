@@ -18,8 +18,8 @@
 		541E6B232676D835008309B0 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B222676D835008309B0 /* ProfileController.swift */; };
 		541E6B262676D842008309B0 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B252676D842008309B0 /* ScanController.swift */; };
 		541E6B292676D851008309B0 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B282676D851008309B0 /* SettingsController.swift */; };
-		541E6B2E2676D9B9008309B0 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2D2676D9B9008309B0 /* SigninController.swift */; };
-		541E6B302676D9C3008309B0 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2F2676D9C3008309B0 /* SignupController.swift */; };
+		541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2D2676D9B9008309B0 /* SignInController.swift */; };
+		541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2F2676D9C3008309B0 /* SignUpController.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,8 @@
 		541E6B222676D835008309B0 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		541E6B252676D842008309B0 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		541E6B282676D851008309B0 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		541E6B2D2676D9B9008309B0 /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
-		541E6B2F2676D9C3008309B0 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		541E6B2D2676D9B9008309B0 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		541E6B2F2676D9C3008309B0 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +96,7 @@
 			children = (
 				540EED322676D24B006CF516 /* AppDelegate.swift */,
 				540EED342676D24B006CF516 /* SceneDelegate.swift */,
-				541E6B2D2676D9B9008309B0 /* SigninController.swift */,
-				541E6B2F2676D9C3008309B0 /* SignupController.swift */,
+				541E6B312676DA02008309B0 /* SignInUpFlow */,
 				541E6B2C2676D965008309B0 /* PatientHomeFlow */,
 				540EED462676D53A006CF516 /* Supporting Files */,
 				540EED472676D544006CF516 /* Assets */,
@@ -182,6 +181,15 @@
 				541E6B2A2676D855008309B0 /* Settings */,
 			);
 			path = PatientHomeFlow;
+			sourceTree = "<group>";
+		};
+		541E6B312676DA02008309B0 /* SignInUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B2D2676D9B9008309B0 /* SignInController.swift */,
+				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
+			);
+			path = SignInUpFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,12 +309,12 @@
 				541E6B292676D851008309B0 /* SettingsController.swift in Sources */,
 				541E6B262676D842008309B0 /* ScanController.swift in Sources */,
 				541E6B232676D835008309B0 /* ProfileController.swift in Sources */,
-				541E6B302676D9C3008309B0 /* SignupController.swift in Sources */,
+				541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */,
 				540EED332676D24B006CF516 /* AppDelegate.swift in Sources */,
 				541E6B202676D824008309B0 /* RecordsController.swift in Sources */,
 				540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */,
 				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
-				541E6B2E2676D9B9008309B0 /* SigninController.swift in Sources */,
+				541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */,
 				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
