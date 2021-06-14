@@ -21,7 +21,7 @@ class HomeController: UIViewController {
     let nameLabel: UILabel = {
         let label: UILabel = UILabel()
         label.font = .font(size: 20, weight: .bold, design: .default)
-        label.textColor = .black
+        label.textColor = .label
         label.text = "Theresa Peterson"
         label.sizeToFit()
         label.numberOfLines = 1
@@ -31,7 +31,7 @@ class HomeController: UIViewController {
     lazy var dobLabel: UILabel = {
         let label: UILabel = UILabel()
         label.font = .font(size: 16, weight: .regular, design: .default)
-        label.textColor = .black
+        label.textColor = .label
         label.sizeToFit()
         label.numberOfLines = 1
         label.textAlignment = .center
@@ -41,7 +41,7 @@ class HomeController: UIViewController {
     let covidLabel: UILabel = {
         let label: UILabel = UILabel()
         label.font = .font(size: 20, weight: .bold, design: .default)
-        label.textColor = .black
+        label.textColor = .label
         label.sizeToFit()
         label.numberOfLines = 1
         label.textAlignment = .center
