@@ -13,9 +13,11 @@
 		540EED3A2676D24B006CF516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540EED382676D24B006CF516 /* Main.storyboard */; };
 		540EED3C2676D24D006CF516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540EED3B2676D24D006CF516 /* Assets.xcassets */; };
 		540EED3F2676D24D006CF516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540EED3D2676D24D006CF516 /* LaunchScreen.storyboard */; };
+		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.debug.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.debug.xcconfig"; sourceTree = "<group>"; };
 		540EED2F2676D24B006CF516 /* VaxMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540EED322676D24B006CF516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540EED342676D24B006CF516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		540EED3B2676D24D006CF516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		540EED3E2676D24D006CF516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		540EED402676D24D006CF516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A516581B1F2A788C7833D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46946F7D3AB0D41217F06E76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */,
+				DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		540EED262676D24B006CF516 = {
 			isa = PBXGroup;
 			children = (
 				540EED312676D24B006CF516 /* VaxMe */,
 				540EED302676D24B006CF516 /* Products */,
+				46946F7D3AB0D41217F06E76 /* Pods */,
+				20A516581B1F2A788C7833D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540EED432676D24D006CF516 /* Build configuration list for PBXNativeTarget "VaxMe" */;
 			buildPhases = (
+				1AEDFF90ADA7A35B3730E181 /* [CP] Check Pods Manifest.lock */,
 				540EED2B2676D24B006CF516 /* Sources */,
 				540EED2C2676D24B006CF516 /* Frameworks */,
 				540EED2D2676D24B006CF516 /* Resources */,
+				F8DD124300D4B9E4902AA123 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AEDFF90ADA7A35B3730E181 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VaxMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DD124300D4B9E4902AA123 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		540EED2B2676D24B006CF516 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		540EED442676D24D006CF516 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		540EED452676D24D006CF516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
