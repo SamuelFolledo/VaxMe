@@ -24,8 +24,9 @@ extension UIColor {
     
     static let vaxMeBlue: UIColor = hexStringToUIColor(hex: "#0CA3C4")
     static let vaxMeLightBlue: UIColor = hexStringToUIColor(hex: "#26B4D4")
-    static let vaxMeRed: UIColor = hexStringToUIColor(hex: "#BA1414")
+    static let vaxMeLogoRed: UIColor = hexStringToUIColor(hex: "#BA1414")
     static let vaxMePurple: UIColor = hexStringToUIColor(hex: "#7166FF")
+    static let vaxMeRed: UIColor = hexStringToUIColor(hex: "#F85F6A")
     
     convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
         self.init(red: r/255, green: g/255, blue: b/255, alpha: a)
