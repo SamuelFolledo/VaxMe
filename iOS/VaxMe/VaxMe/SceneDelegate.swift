@@ -58,7 +58,7 @@ extension SceneDelegate {
 //            window.rootViewController = nav
             
             //For Home
-            window.rootViewController = BaseSlidingController()
+            window.rootViewController = SignUpController()
         }
     }
 }
