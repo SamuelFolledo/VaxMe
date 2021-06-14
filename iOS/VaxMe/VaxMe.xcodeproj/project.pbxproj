@@ -35,6 +35,11 @@
 		541E6B4E2676DABD008309B0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B402676DABD008309B0 /* Date+Extensions.swift */; };
 		541E6B4F2676DABD008309B0 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B412676DABD008309B0 /* UITextField+Extensions.swift */; };
 		541E6B522676DB92008309B0 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B512676DB92008309B0 /* AppService.swift */; };
+		541E6B562676E0C2008309B0 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B552676E0C2008309B0 /* MenuController.swift */; };
+		541E6B592676E0E0008309B0 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B582676E0E0008309B0 /* MenuOptionCell.swift */; };
+		541E6B5B2676E0E6008309B0 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B5A2676E0E6008309B0 /* MenuOption.swift */; };
+		541E6B5D2676E0F2008309B0 /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B5C2676E0F2008309B0 /* MenuHeaderCell.swift */; };
+		541E6B5F2676E444008309B0 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +75,11 @@
 		541E6B402676DABD008309B0 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		541E6B412676DABD008309B0 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		541E6B512676DB92008309B0 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		541E6B552676E0C2008309B0 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		541E6B582676E0E0008309B0 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		541E6B5A2676E0E6008309B0 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		541E6B5C2676E0F2008309B0 /* MenuHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderCell.swift; sourceTree = "<group>"; };
+		541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				541E6B1A2676D7F1008309B0 /* BaseSlidingController.swift */,
+				541E6B572676E0C6008309B0 /* Menu */,
 			);
 			path = BaseSlidingController;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 				541E6B3F2676DABD008309B0 /* UILabel+Extensions.swift */,
 				541E6B402676DABD008309B0 /* Date+Extensions.swift */,
 				541E6B412676DABD008309B0 /* UITextField+Extensions.swift */,
+				541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +287,17 @@
 				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		541E6B572676E0C6008309B0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				541E6B552676E0C2008309B0 /* MenuController.swift */,
+				541E6B582676E0E0008309B0 /* MenuOptionCell.swift */,
+				541E6B5A2676E0E6008309B0 /* MenuOption.swift */,
+				541E6B5C2676E0F2008309B0 /* MenuHeaderCell.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,21 +423,26 @@
 				541E6B4C2676DABD008309B0 /* UserDefaults+Extensions.swift in Sources */,
 				541E6B232676D835008309B0 /* ProfileController.swift in Sources */,
 				541E6B432676DABD008309B0 /* UIViewController+Extensions.swift in Sources */,
+				541E6B5B2676E0E6008309B0 /* MenuOption.swift in Sources */,
 				541E6B442676DABD008309B0 /* UIView+Extensions.swift in Sources */,
 				541E6B4F2676DABD008309B0 /* UITextField+Extensions.swift in Sources */,
 				541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */,
 				541E6B4E2676DABD008309B0 /* Date+Extensions.swift in Sources */,
+				541E6B5D2676E0F2008309B0 /* MenuHeaderCell.swift in Sources */,
 				540EED332676D24B006CF516 /* AppDelegate.swift in Sources */,
 				541E6B452676DABD008309B0 /* String+Extensions.swift in Sources */,
 				541E6B202676D824008309B0 /* RecordsController.swift in Sources */,
 				540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */,
 				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
 				541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */,
+				541E6B5F2676E444008309B0 /* UIWindow+Extensions.swift in Sources */,
 				541E6B462676DABD008309B0 /* UIFont+Extensions.swift in Sources */,
 				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
 				541E6B492676DABD008309B0 /* UIImage+Extensions.swift in Sources */,
+				541E6B592676E0E0008309B0 /* MenuOptionCell.swift in Sources */,
 				541E6B4B2676DABD008309B0 /* UIStackView+Extensions.swift in Sources */,
 				541E6B482676DABD008309B0 /* UIColor+Extensions.swift in Sources */,
+				541E6B562676E0C2008309B0 /* MenuController.swift in Sources */,
 				541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
