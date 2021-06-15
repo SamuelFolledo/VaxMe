@@ -122,7 +122,12 @@ class MenuHeaderCell: UITableViewCell {
 //            }
 //            self.tenantName.text = name
 //        }
-        self.tenantName.text = "User's Full name"
+        guard let user = Patient.current else { return }
+        if user.firstName.isEmpty {
+            tenantName.text = "\(user.username)"
+        } else {
+            tenantName.text = "\(user.firstName) \(user.lastName)"
+        }
         
         // Fetches Tenant Profile Image
 //        guard let user = Auth.auth().currentUser else { return }

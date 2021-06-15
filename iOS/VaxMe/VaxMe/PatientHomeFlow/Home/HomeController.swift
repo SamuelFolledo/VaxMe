@@ -36,6 +36,7 @@ class HomeController: UIViewController {
         label.numberOfLines = 1
         label.textAlignment = .center
         label.text = "DOB: 06/05/1995"
+        //TODO - Samuel Implement DOB once sign up flow is finish
         return label
     }()
     let covidLabel: UILabel = {
@@ -68,6 +69,7 @@ class HomeController: UIViewController {
 //MARK: Setup Methods
 extension HomeController {
     private func setupViews() {
+        populateViewsWithUserData()
         configureNavigationBar()
         let stackView = UIStackView(axis: .vertical, spacing: 16, distribution: .fill, alignment: .center)
         view.addSubview(stackView)
@@ -96,6 +98,15 @@ extension HomeController {
         let buttonImage = UIImage(systemName: "line.horizontal.3")!.withRenderingMode(.alwaysOriginal)
         let barButton = UIBarButtonItem(image: buttonImage, style: .plain, target: self, action: #selector(handleOpenMenu))
         navigationItem.leftBarButtonItem = barButton
+    }
+    
+    private func populateViewsWithUserData() {
+        guard let user = Patient.current else { return }
+        if user.firstName.isEmpty {
+            nameLabel.text = "\(user.username)"
+        } else {
+            nameLabel.text = "\(user.firstName) \(user.lastName)"
+        }
     }
     
     // MARK: - @objc Methods
