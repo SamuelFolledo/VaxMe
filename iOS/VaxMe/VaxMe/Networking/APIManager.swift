@@ -218,7 +218,7 @@ class APIService: NetworkService {
 }
 
 //MARK: - Helpers
-private extension APIService {
+extension APIService {
     
     func isTokenValid() -> Bool {
         let tokenDate = APIService.tokenExpirationDate
