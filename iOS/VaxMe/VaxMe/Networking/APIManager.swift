@@ -75,25 +75,53 @@ class APIService: NetworkService {
     struct Patient: Codable {
 //        var id: Int
         var email: String
-        var lastLogin: String? //optional
+        var lastLogin: String? //optional on sign up and login
         var isSuperuser: Bool
         var username: String
-        var firstName: [String]
-        var lastName: [String]
+        var firstName: String
+        var lastName: String
         var groups: [String] = []
         var userPermissions: [String] = []
-        var isStaff: Bool?
-        var isActive: Bool?
-        var dateJoined: String?
+        var isStaff: Bool? //currently not optional when sign up
+        var isActive: Bool? //currently not optional when sign up
+        var dateJoined: String? //currently not optional when sign up
     }
     
-    struct SignInResponse: Codable {
+    struct LogInResponse: Codable {
         var token: String
         var expiresIn: String //Int in seconds
         var user: User
         
         func getAsPatient() -> Patient {
-            let patient = Patient(email: user.email, isSuperuser: false, username: user.username, firstName: [user.firstName], lastName: [user.lastName])
+            let patient = Patient(email: user.email, isSuperuser: false, username: user.username, firstName: user.firstName, lastName: user.lastName)
+            return patient
+        }
+        
+        struct User: Codable {
+            var email: String
+            var firstName: String
+            var lastName: String
+            var username: String
+        }
+    }
+    
+    struct SignUpResponse: Codable {
+//        var id: Int
+        var email: String
+        var lastLogin: String? //optional on sign up and login
+        var isSuperuser: Bool
+        var username: String
+        var groups: [String] = []
+        var userPermissions: [String] = []
+        var isStaff: Bool
+        var isActive: Bool
+        var dateJoined: String
+//        var token: String
+//        var expiresIn: String //Int in seconds
+//        var user: User
+        
+        func getAsPatient() -> Patient {
+            let patient = Patient(email: email, lastLogin: lastLogin, isSuperuser: isSuperuser, username: username, firstName: "", lastName: "", groups: groups, userPermissions: userPermissions, isStaff: isStaff, isActive: isActive, dateJoined: dateJoined)
             return patient
         }
         
@@ -125,7 +153,7 @@ class APIService: NetworkService {
             }
             if error != nil {
                 print("\(#function) - Error: \(error!.localizedDescription)")
-                completion(.failure(error))
+                completion(.failure(error!))
             }
             if let userData = data {
                 let decoder = JSONDecoder()
@@ -141,9 +169,12 @@ class APIService: NetworkService {
                             //Example error = ["email": "This field must be unique"]
                             print("EMAIL ERROR \(emailError)")
                         }
+                        if let errors = json["error"] as? [String] {
+                            print("Sign In ERROR \(errors)")
+                        }
                         // handle json...
                     }
-                    let object = try decoder.decode(SignInResponse.self, from: userData)
+                    let object = try decoder.decode(LogInResponse.self, from: userData)
                     completion(.success(object.getAsPatient()))
                 } catch let error {
                     print("❌ \(#function) - Decoding error: \(error)\nsignIn error: \(String(decoding: userData, as: UTF8.self))")
@@ -167,13 +198,8 @@ class APIService: NetworkService {
         var request = URLRequest(url: url)
         request.httpMethod = method
         request.httpBody = jsonData
-//        request.httpBody = json.percentEncoded()
-        
-//        request.httpBody = "username=\(username)&email=\(email)&password=\(password)&password2=\(password2)".data(using: .utf8)
-//        request.httpBody = "grant_type=client_credentials&client_id=\(apiKey)&client_secret=\(secret)".data(using: .utf8)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
-//        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
             if let response = response as? HTTPURLResponse {
@@ -182,14 +208,12 @@ class APIService: NetworkService {
             if error != nil {
                 print("\(#function) - Error: \(error!.localizedDescription)")
             }
-            print("Got data!")
             if let userData = data {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase  //convert keys from snake case to camel case
                 do {
 //                    let object = try decoder.decode(TokenResponse.self, from: tokenData)
 //                    self.token = object.access_token
-//
 //                    let date = Date().addingTimeInterval(TimeInterval(object.expires_in))
 //                    print("\ntoken local expiration date: \(date)")
 //                    self.tokenExpirationDate = date
@@ -203,13 +227,12 @@ class APIService: NetworkService {
                             //Example error = ["email": "This field must be unique"]
                             print("Email ERROR \(emailError)")
                         }
-                        
-                        // handle json...
+                        if let errors = json["error"] as? [String] {
+                            print("Sign Up ERROR \(errors)")
+                        }
                     }
-                    
-                    let object = try decoder.decode(Patient.self, from: userData)
-                    print("Patient data \(object)")
-                    completion(.success(object))
+                    let object = try decoder.decode(SignUpResponse.self, from: userData)
+                    completion(.success(object.getAsPatient()))
                 } catch let error {
                     print("❌ \(#function) - Decoding error: \(error) \ntokenData error: \(String(decoding: userData, as: UTF8.self))")
                 }
