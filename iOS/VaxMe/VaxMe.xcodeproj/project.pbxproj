@@ -42,7 +42,6 @@
 		541E6B5F2676E444008309B0 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */; };
 		54CFB5C22677DE43008F741C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5C12677DE43008F741C /* APIManager.swift */; };
 		54CFB5C52677DE60008F741C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5C42677DE60008F741C /* Endpoint.swift */; };
-		54CFB5C726781546008F741C /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5C626781546008F741C /* Dictionary+Extensions.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		54CFB5C12677DE43008F741C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		54CFB5C42677DE60008F741C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		54CFB5C626781546008F741C /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,7 +266,6 @@
 				541E6B402676DABD008309B0 /* Date+Extensions.swift */,
 				541E6B412676DABD008309B0 /* UITextField+Extensions.swift */,
 				541E6B5E2676E444008309B0 /* UIWindow+Extensions.swift */,
-				54CFB5C626781546008F741C /* Dictionary+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -463,7 +460,6 @@
 				541E6B562676E0C2008309B0 /* MenuController.swift in Sources */,
 				54CFB5C22677DE43008F741C /* APIManager.swift in Sources */,
 				541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */,
-				54CFB5C726781546008F741C /* Dictionary+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
