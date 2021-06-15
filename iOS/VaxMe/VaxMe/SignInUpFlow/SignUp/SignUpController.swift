@@ -15,6 +15,7 @@ import SnapKit
     [] Use AppService to create these textfields and other views to allow reusability
  [] Save that orange/pink color to UIColor+Extensions (get the hex/rgb from Vlad)
  [] Use String+Extensions.swift (not sure if it still works) to update the email and password validator. If both email and passwords are valid, then enable the Sign In button
+ [] Clean texts for email, names, etc. (e.g. email should not have whitespace at the beginning and end)
  [] Eye thing on password to show and unshow the password
  [] Also create the view when Terms of Services and Privacy Policy is tapped
  */
@@ -151,17 +152,21 @@ class SignUpController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        hideKeyboardOnTap()
     }
 }
 
 //MARK: Methods
 extension SignUpController {
     func setupViews() {
+        hideKeyboardOnTap()
         self.title = "Sign Up"
         view.backgroundColor = .systemBackground
         let stackView = UIStackView(axis: .vertical, spacing: 16, distribution: .fill, alignment: .center)
         view.addSubview(stackView)
+        emailTextField.text = "samuelfolledo@gmail.com"
+        passwordTextField.text = "PassMe123"
+        password2TextField.text = "PassMe123"
+        usernameTextField.text = "Samuel"
         stackView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(8)
             $0.centerX.equalToSuperview()
@@ -197,10 +202,19 @@ extension SignUpController {
     
     //MARK: @OBJC func
     @objc func continueButtonTapped() {
+        //MARK: - TODO - Ben Clean email and other texts here
         print("Continue Sign up todo - Samuel")
+        APIService.signUp(email: emailTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!, password2: password2TextField.text!) { result in
+            switch result {
+            case .failure(let error):
+                print("Error signing up \(error.localizedDescription)")
+            case .success(let patient):
+                print("GOTTT PATIENT")
+            }
+        }
     }
     
     @objc func signInButtonTapped() {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }
