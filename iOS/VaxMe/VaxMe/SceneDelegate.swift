@@ -52,14 +52,12 @@ extension SceneDelegate {
     private func showRootController() {
         guard let window = window else { return }
         //if we have user... show home
-        if true {
-            //For Sign in, uncomment below, and comment Home
+        if let patient = Patient.current {
+            print("Welcome back \(patient)")
+            window.rootViewController = BaseSlidingController()
+        } else {
             let nav = UINavigationController(rootViewController: SignInController())
             window.rootViewController = nav
-            
-            //For Home
-//            window.rootViewController = SignUpController()
-//            window.rootViewController = BaseSlidingController()
         }
     }
 }
