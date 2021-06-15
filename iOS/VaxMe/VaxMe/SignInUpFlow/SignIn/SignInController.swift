@@ -13,6 +13,7 @@ import SnapKit
  [] Save that orange/pink color to UIColor+Extensions (get the hex/rgb from Vlad)
  [] Use String+Extensions.swift (not sure if it still works) to update the email and password validator. If both email and passwords are valid, then enable the Sign In button
  [] Clean texts for email, names, etc. (e.g. email should not have whitespace at the beginning and end)
+ [] Show activity indicators when loggin in
  [] Create the Forgot Password Controller and push it when button is tapped
  [] Eye thing on password to show and unshow the password
  */
@@ -159,21 +160,17 @@ extension SignInController {
             case .failure(let error):
                 print("Error signin In \(error.localizedDescription)")
             case .success(let patient):
-                print("Got patient!!! \(patient)")
+                print("Signed in patient: \(patient)")
+                Patient.setCurrent(patient, writeToUserDefaults: true)
+                DispatchQueue.main.async {
+                    self.view.window?.rootViewController = BaseSlidingController()
+                    self.view.window?.makeKeyAndVisible()
+                }
             }
         }
-//        APIService.signUp(email: usernameTextfield.text!, username: usernameTextField.text!, password: passwordTextField.text!, password2: password2TextField.text!) { result in
-//            switch result {
-//            case .failure(let error):
-//                print("Error signing up \(error.localizedDescription)")
-//            case .success(let patient):
-//                print("GOTTT PATIENT")
-//            }
-//        }
     }
     
     @objc func signUpButtonTapped() {
-//        dismiss(animated: true, completion: nil)
         navigationController?.pushViewController(SignUpController(), animated: true)
     }
 }
