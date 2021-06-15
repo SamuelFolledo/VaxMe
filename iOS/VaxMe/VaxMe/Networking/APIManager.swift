@@ -72,66 +72,7 @@ class APIService: NetworkService {
         return isValid
     }
     
-    struct Patient: Codable {
-//        var id: Int
-        var email: String
-        var lastLogin: String? //optional on sign up and login
-        var isSuperuser: Bool
-        var username: String
-        var firstName: String
-        var lastName: String
-        var groups: [String] = []
-        var userPermissions: [String] = []
-        var isStaff: Bool? //currently not optional when sign up
-        var isActive: Bool? //currently not optional when sign up
-        var dateJoined: String? //currently not optional when sign up
-    }
-    
-    struct LogInResponse: Codable {
-        var token: String
-        var expiresIn: String //Int in seconds
-        var user: User
-        
-        func getAsPatient() -> Patient {
-            let patient = Patient(email: user.email, isSuperuser: false, username: user.username, firstName: user.firstName, lastName: user.lastName)
-            return patient
-        }
-        
-        struct User: Codable {
-            var email: String
-            var firstName: String
-            var lastName: String
-            var username: String
-        }
-    }
-    
-    struct SignUpResponse: Codable {
-//        var id: Int
-        var email: String
-        var lastLogin: String? //optional on sign up and login
-        var isSuperuser: Bool
-        var username: String
-        var groups: [String] = []
-        var userPermissions: [String] = []
-        var isStaff: Bool
-        var isActive: Bool
-        var dateJoined: String
-//        var token: String
-//        var expiresIn: String //Int in seconds
-//        var user: User
-        
-        func getAsPatient() -> Patient {
-            let patient = Patient(email: email, lastLogin: lastLogin, isSuperuser: isSuperuser, username: username, firstName: "", lastName: "", groups: groups, userPermissions: userPermissions, isStaff: isStaff, isActive: isActive, dateJoined: dateJoined)
-            return patient
-        }
-        
-        struct User: Codable {
-            var email: String
-            var firstName: String
-            var lastName: String
-            var username: String
-        }
-    }
+    //MARK: - Methods
     
     static func signIn(username: String, password: String, completion: @escaping ((Result<Patient, Error>) -> Void)) {
         let json: [String: Any] = [
