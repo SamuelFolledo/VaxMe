@@ -54,11 +54,12 @@ extension SceneDelegate {
         //if we have user... show home
         if true {
             //For Sign in, uncomment below, and comment Home
-//            let nav = UINavigationController(rootViewController: SignInController())
-//            window.rootViewController = nav
+            let nav = UINavigationController(rootViewController: SignInController())
+            window.rootViewController = nav
             
             //For Home
-            window.rootViewController = SignUpController()
+//            window.rootViewController = SignUpController()
+//            window.rootViewController = BaseSlidingController()
         }
     }
 }
