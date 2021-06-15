@@ -16,60 +16,14 @@ protocol NetworkService {
 
 class APIService: NetworkService {
     
-    private var apiKey: String {
-        guard let filePath = Bundle.main.path(forResource: "Petfinder-Info", ofType: "plist") else {
-            fatalError("Petfinder-Info file NOT found! Create it and add your API Key and Secret")
-        }
-        
-        let plist = NSDictionary(contentsOfFile: filePath)
-        guard let loadedKey = plist?.object(forKey: "API_KEY") as? String else {
-            fatalError("API_KEY NOT found in Petfinder-Info.plist")
-        }
-        
-        if(loadedKey.starts(with: "_")) {
-            fatalError("Register and get your own Petfinder API Key at: https://www.petfinder.com/developers/v2/docs/")
-        }
-        return loadedKey
-    }
-    
-    private var secret: String {
-        guard let filePath = Bundle.main.path(forResource: "Petfinder-Info", ofType: "plist") else {
-            fatalError("Petfinder-Info file NOT found!")
-        }
-        
-        let plist = NSDictionary(contentsOfFile: filePath)
-        guard let loadedSecret = plist?.object(forKey: "API_SECRET") as? String else {
-            fatalError("API_SECRET NOT found in Petfinder-Info.plist")
-        }
-        
-        if(loadedSecret.starts(with: "_")) {
-            fatalError("Register and get your own Petfinder API Secret at: https://www.petfinder.com/developers/v2/docs/")
-        }
-        return loadedSecret
-    }
-    
-    private var token: String {
+    private static var token: String {
         get { UserDefaults.standard.string(forKey: Keys.tokenKey) ?? "" }
         set {  UserDefaults.standard.setValue(newValue, forKey: Keys.tokenKey) }
     }
     
-    private var tokenExpirationDate: Date {
+    private static var tokenExpirationDate: Date {
         get { UserDefaults.standard.object(forKey: Keys.tokenExpiration) as? Date ?? Date() }
         set { UserDefaults.standard.set(newValue, forKey: Keys.tokenExpiration) }
-    }
-    
-    // To decode server answer to a token request
-    private struct TokenResponse: Decodable {
-        let token_type: String
-        let expires_in: Int
-        let access_token: String
-    }
-    
-    func isTokenValid() -> Bool {
-        let tokenDate = tokenExpirationDate
-        let isValid = Date() < tokenDate && !token.isEmpty
-        print("\n\(#function) = \(isValid)")
-        return isValid
     }
     
     //MARK: - Methods
@@ -115,8 +69,9 @@ class APIService: NetworkService {
                         }
                         // handle json...
                     }
-                    let object = try decoder.decode(LogInResponse.self, from: userData)
-                    completion(.success(object.getAsPatient()))
+                    let loginResponse = try decoder.decode(LogInResponse.self, from: userData)
+                    self.updateToken(newToken: loginResponse.token, expiration: loginResponse.expiresIn)
+                    completion(.success(loginResponse.getAsPatient()))
                 } catch let error {
                     print("❌ \(#function) - Decoding error: \(error)\nsignIn error: \(String(decoding: userData, as: UTF8.self))")
                     completion(.failure(error))
@@ -173,6 +128,7 @@ class APIService: NetworkService {
                         }
                     }
                     let object = try decoder.decode(SignUpResponse.self, from: userData)
+                    //TODO - Samuel - update token here once it is implemented on the backend
                     completion(.success(object.getAsPatient()))
                 } catch let error {
                     print("❌ \(#function) - Decoding error: \(error) \ntokenData error: \(String(decoding: userData, as: UTF8.self))")
@@ -256,5 +212,25 @@ class APIService: NetworkService {
 //                self?.fetch(at: endPoint, completion: completion)
 //            }
 //        }
+    }
+    
+    private init() {}
+}
+
+//MARK: - Helpers
+private extension APIService {
+    
+    func isTokenValid() -> Bool {
+        let tokenDate = APIService.tokenExpirationDate
+        let isValid = Date() < tokenDate && !APIService.token.isEmpty
+        print("\n\(#function) = \(isValid)")
+        return isValid
+    }
+    
+    static func updateToken(newToken: String, expiration: String) {
+        self.token = newToken
+        let newExpiration = Date.init(timeIntervalSinceNow: TimeInterval(expiration)!)
+//        print("Token \(token) expiring in \(expiration) meaning \(newExpiration)")
+        self.tokenExpirationDate = newExpiration
     }
 }
