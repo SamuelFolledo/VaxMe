@@ -5,6 +5,7 @@
 //  Created by Samuel Folledo on 6/13/21.
 //
 
+import UIKit
 import SnapKit
 
 class HomeController: UIViewController {
@@ -102,10 +103,10 @@ extension HomeController {
     
     private func populateViewsWithUserData() {
         guard let user = Patient.current else { return }
-        if user.firstName.isEmpty {
-            nameLabel.text = "\(user.username)"
+        if let firstName = user.firstName, !firstName.isEmpty, let lastName = user.lastName, !lastName.isEmpty {
+            nameLabel.text = "\(firstName) \(lastName)"
         } else {
-            nameLabel.text = "\(user.firstName) \(user.lastName)"
+            nameLabel.text = "\(user.username)"
         }
     }
     

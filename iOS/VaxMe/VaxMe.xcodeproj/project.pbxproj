@@ -18,8 +18,6 @@
 		541E6B232676D835008309B0 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B222676D835008309B0 /* ProfileController.swift */; };
 		541E6B262676D842008309B0 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B252676D842008309B0 /* ScanController.swift */; };
 		541E6B292676D851008309B0 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B282676D851008309B0 /* SettingsController.swift */; };
-		541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2D2676D9B9008309B0 /* SignInController.swift */; };
-		541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B2F2676D9C3008309B0 /* SignUpController.swift */; };
 		541E6B422676DABD008309B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B332676DABD008309B0 /* Constants.swift */; };
 		541E6B432676DABD008309B0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B352676DABD008309B0 /* UIViewController+Extensions.swift */; };
 		541E6B442676DABD008309B0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6B362676DABD008309B0 /* UIView+Extensions.swift */; };
@@ -45,16 +43,13 @@
 		54CFB5C926784A2A008F741C /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5C826784A2A008F741C /* Patient.swift */; };
 		54CFB5CB26784A31008F741C /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CA26784A31008F741C /* Responses.swift */; };
 		54CFB5CE26784FAA008F741C /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CD26784FAA008F741C /* Defaults.swift */; };
-		7EA7F902278688C4009AF23F /* CustomImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */; };
-		7EA7F903278688C4009AF23F /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */; };
-		7EA7F904278688C4009AF23F /* PhotoPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */; };
-		7EA7F905278688C4009AF23F /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */; };
-		7EA7F906278688C4009AF23F /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */; };
 		7EA7F908278688F2009AF23F /* WebSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F907278688F2009AF23F /* WebSignInController.swift */; };
 		7EF6EDAF278BB963008C91B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDAE278BB963008C91B2 /* SnapKit */; };
 		7EF6EDB2278BB98D008C91B2 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB1278BB98D008C91B2 /* KeychainSwift */; };
 		7EF6EDB5278BB9C6008C91B2 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB4278BB9C6008C91B2 /* NVActivityIndicatorView */; };
 		7EF6EDB8278BBA20008C91B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB7278BBA20008C91B2 /* Kingfisher */; };
+		7EF6EDBB278BBD3E008C91B2 /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDBA278BBD3E008C91B2 /* TLPhotoPicker */; };
+		7EF6EDBE278BBDAD008C91B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDBD278BBDAD008C91B2 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +66,6 @@
 		541E6B222676D835008309B0 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		541E6B252676D842008309B0 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		541E6B282676D851008309B0 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		541E6B2D2676D9B9008309B0 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
-		541E6B2F2676D9C3008309B0 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		541E6B332676DABD008309B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		541E6B352676DABD008309B0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		541E6B362676DABD008309B0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -98,11 +91,6 @@
 		54CFB5C826784A2A008F741C /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		54CFB5CA26784A31008F741C /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		54CFB5CD26784FAA008F741C /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImagePickerController.swift; sourceTree = "<group>"; };
-		7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoPickerCell.xib; sourceTree = "<group>"; };
-		7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
-		7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
 		7EA7F907278688F2009AF23F /* WebSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSignInController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +102,9 @@
 				7EF6EDB8278BBA20008C91B2 /* Kingfisher in Frameworks */,
 				7EF6EDB2278BB98D008C91B2 /* KeychainSwift in Frameworks */,
 				7EF6EDAF278BB963008C91B2 /* SnapKit in Frameworks */,
+				7EF6EDBE278BBDAD008C91B2 /* Alamofire in Frameworks */,
 				7EF6EDB5278BB9C6008C91B2 /* NVActivityIndicatorView in Frameworks */,
+				7EF6EDBB278BBD3E008C91B2 /* TLPhotoPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				541E6B532676DE25008309B0 /* SignIn */,
-				541E6B542676DE2D008309B0 /* SignUp */,
 			);
 			path = SignInUpFlow;
 			sourceTree = "<group>";
@@ -285,20 +274,9 @@
 		541E6B532676DE25008309B0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				541E6B2D2676D9B9008309B0 /* SignInController.swift */,
 				7EA7F907278688F2009AF23F /* WebSignInController.swift */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		541E6B542676DE2D008309B0 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				7EA7F8FB278688C4009AF23F /* CustomImagePicker */,
-				7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */,
-				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		541E6B572676E0C6008309B0 /* Menu */ = {
@@ -330,25 +308,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7EA7F8FB278688C4009AF23F /* CustomImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */,
-				7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */,
-				7EA7F8FE278688C4009AF23F /* Cell */,
-			);
-			path = CustomImagePicker;
-			sourceTree = "<group>";
-		};
-		7EA7F8FE278688C4009AF23F /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */,
-				7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,6 +329,8 @@
 				7EF6EDB1278BB98D008C91B2 /* KeychainSwift */,
 				7EF6EDB4278BB9C6008C91B2 /* NVActivityIndicatorView */,
 				7EF6EDB7278BBA20008C91B2 /* Kingfisher */,
+				7EF6EDBA278BBD3E008C91B2 /* TLPhotoPicker */,
+				7EF6EDBD278BBDAD008C91B2 /* Alamofire */,
 			);
 			productName = VaxMe;
 			productReference = 540EED2F2676D24B006CF516 /* VaxMe.app */;
@@ -403,6 +364,8 @@
 				7EF6EDB0278BB98D008C91B2 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				7EF6EDB3278BB9C6008C91B2 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				7EF6EDB6278BBA20008C91B2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7EF6EDB9278BBD3E008C91B2 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
+				7EF6EDBC278BBDAD008C91B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 540EED302676D24B006CF516 /* Products */;
 			projectDirPath = "";
@@ -418,7 +381,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA7F904278688C4009AF23F /* PhotoPickerCell.xib in Resources */,
 				540EED3F2676D24D006CF516 /* LaunchScreen.storyboard in Resources */,
 				540EED492676D7AD006CF516 /* Assets.xcassets in Resources */,
 				540EED3A2676D24B006CF516 /* Main.storyboard in Resources */,
@@ -446,7 +408,6 @@
 				54CFB5C52677DE60008F741C /* Endpoint.swift in Sources */,
 				541E6B442676DABD008309B0 /* UIView+Extensions.swift in Sources */,
 				541E6B4F2676DABD008309B0 /* UITextField+Extensions.swift in Sources */,
-				541E6B302676D9C3008309B0 /* SignUpController.swift in Sources */,
 				54CFB5CB26784A31008F741C /* Responses.swift in Sources */,
 				541E6B4E2676DABD008309B0 /* Date+Extensions.swift in Sources */,
 				541E6B5D2676E0F2008309B0 /* MenuHeaderCell.swift in Sources */,
@@ -456,19 +417,14 @@
 				540EED352676D24B006CF516 /* SceneDelegate.swift in Sources */,
 				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
 				54CFB5CE26784FAA008F741C /* Defaults.swift in Sources */,
-				541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */,
-				7EA7F902278688C4009AF23F /* CustomImagePickerController.swift in Sources */,
 				541E6B5F2676E444008309B0 /* UIWindow+Extensions.swift in Sources */,
 				541E6B462676DABD008309B0 /* UIFont+Extensions.swift in Sources */,
 				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
-				7EA7F905278688C4009AF23F /* PhotoPickerCell.swift in Sources */,
 				541E6B492676DABD008309B0 /* UIImage+Extensions.swift in Sources */,
 				541E6B592676E0E0008309B0 /* MenuOptionCell.swift in Sources */,
-				7EA7F903278688C4009AF23F /* ProfileImageView.swift in Sources */,
 				541E6B4B2676DABD008309B0 /* UIStackView+Extensions.swift in Sources */,
 				541E6B482676DABD008309B0 /* UIColor+Extensions.swift in Sources */,
 				541E6B562676E0C2008309B0 /* MenuController.swift in Sources */,
-				7EA7F906278688C4009AF23F /* FinishSignUpViewController.swift in Sources */,
 				54CFB5C22677DE43008F741C /* APIManager.swift in Sources */,
 				541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */,
 				54CFB5C926784A2A008F741C /* Patient.swift in Sources */,
@@ -707,6 +663,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		7EF6EDB9278BBD3E008C91B2 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilltue/TLPhotoPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		7EF6EDBC278BBDAD008C91B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -729,6 +701,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7EF6EDB6278BBA20008C91B2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		7EF6EDBA278BBD3E008C91B2 /* TLPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDB9278BBD3E008C91B2 /* XCRemoteSwiftPackageReference "TLPhotoPicker" */;
+			productName = TLPhotoPicker;
+		};
+		7EF6EDBD278BBDAD008C91B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDBC278BBDAD008C91B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

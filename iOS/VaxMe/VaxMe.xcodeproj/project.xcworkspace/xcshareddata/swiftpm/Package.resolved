@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+          "version": "5.5.0"
+        }
+      },
+      {
         "package": "KeychainSwift",
         "repositoryURL": "https://github.com/evgenyneu/keychain-swift",
         "state": {
@@ -35,6 +44,15 @@
           "branch": "develop",
           "revision": "466db39ee4ef32b0f7c8cd9f009aaf42f80beace",
           "version": null
+        }
+      },
+      {
+        "package": "TLPhotoPicker",
+        "repositoryURL": "https://github.com/tilltue/TLPhotoPicker",
+        "state": {
+          "branch": null,
+          "revision": "0d0cbbd2d20ed5fd36e5f4052209f5e2d9aaa8b7",
+          "version": "2.1.9"
         }
       }
     ]

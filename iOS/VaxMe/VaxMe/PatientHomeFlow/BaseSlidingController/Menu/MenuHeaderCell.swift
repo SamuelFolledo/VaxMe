@@ -123,10 +123,10 @@ class MenuHeaderCell: UITableViewCell {
 //            self.tenantName.text = name
 //        }
         guard let user = Patient.current else { return }
-        if user.firstName.isEmpty {
-            tenantName.text = "\(user.username)"
+        if let firstName = user.firstName, !firstName.isEmpty, let lastName = user.lastName, !lastName.isEmpty {
+            tenantName.text = "\(firstName) \(lastName)"
         } else {
-            tenantName.text = "\(user.firstName) \(user.lastName)"
+            tenantName.text = "\(user.username)"
         }
         
         // Fetches Tenant Profile Image

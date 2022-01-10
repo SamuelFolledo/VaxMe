@@ -135,7 +135,7 @@ class BaseSlidingController: UIViewController {
 //                Tenant.removeCurrent(true)
 //                UserDefaults.hasLoggedInOrCreatedAccount = false
             Defaults._removeUser(true)
-            self.view.window?.rootViewController = UINavigationController(rootViewController: SignInController())
+            self.view.window?.rootViewController = UINavigationController(rootViewController: WebSignInController())
             self.view.window?.makeKeyAndVisible()
 //            }
         }
