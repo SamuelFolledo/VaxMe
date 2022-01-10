@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,17 +45,19 @@
 		54CFB5C926784A2A008F741C /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5C826784A2A008F741C /* Patient.swift */; };
 		54CFB5CB26784A31008F741C /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CA26784A31008F741C /* Responses.swift */; };
 		54CFB5CE26784FAA008F741C /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CD26784FAA008F741C /* Defaults.swift */; };
-		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
 		7EA7F902278688C4009AF23F /* CustomImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */; };
 		7EA7F903278688C4009AF23F /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */; };
 		7EA7F904278688C4009AF23F /* PhotoPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */; };
 		7EA7F905278688C4009AF23F /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */; };
 		7EA7F906278688C4009AF23F /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */; };
 		7EA7F908278688F2009AF23F /* WebSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F907278688F2009AF23F /* WebSignInController.swift */; };
+		7EF6EDAF278BB963008C91B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDAE278BB963008C91B2 /* SnapKit */; };
+		7EF6EDB2278BB98D008C91B2 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB1278BB98D008C91B2 /* KeychainSwift */; };
+		7EF6EDB5278BB9C6008C91B2 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB4278BB9C6008C91B2 /* NVActivityIndicatorView */; };
+		7EF6EDB8278BBA20008C91B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7EF6EDB7278BBA20008C91B2 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.debug.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.debug.xcconfig"; sourceTree = "<group>"; };
 		540EED2F2676D24B006CF516 /* VaxMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540EED322676D24B006CF516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540EED342676D24B006CF516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,14 +98,12 @@
 		54CFB5C826784A2A008F741C /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		54CFB5CA26784A31008F741C /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		54CFB5CD26784FAA008F741C /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImagePickerController.swift; sourceTree = "<group>"; };
 		7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoPickerCell.xib; sourceTree = "<group>"; };
 		7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
 		7EA7F907278688F2009AF23F /* WebSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSignInController.swift; sourceTree = "<group>"; };
-		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,37 +111,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */,
+				7EF6EDB8278BBA20008C91B2 /* Kingfisher in Frameworks */,
+				7EF6EDB2278BB98D008C91B2 /* KeychainSwift in Frameworks */,
+				7EF6EDAF278BB963008C91B2 /* SnapKit in Frameworks */,
+				7EF6EDB5278BB9C6008C91B2 /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20A516581B1F2A788C7833D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		46946F7D3AB0D41217F06E76 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */,
-				DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		540EED262676D24B006CF516 = {
 			isa = PBXGroup;
 			children = (
 				540EED312676D24B006CF516 /* VaxMe */,
 				540EED302676D24B006CF516 /* Products */,
-				46946F7D3AB0D41217F06E76 /* Pods */,
-				20A516581B1F2A788C7833D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,17 +356,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540EED432676D24D006CF516 /* Build configuration list for PBXNativeTarget "VaxMe" */;
 			buildPhases = (
-				1AEDFF90ADA7A35B3730E181 /* [CP] Check Pods Manifest.lock */,
 				540EED2B2676D24B006CF516 /* Sources */,
 				540EED2C2676D24B006CF516 /* Frameworks */,
 				540EED2D2676D24B006CF516 /* Resources */,
-				F8DD124300D4B9E4902AA123 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VaxMe;
+			packageProductDependencies = (
+				7EF6EDAE278BB963008C91B2 /* SnapKit */,
+				7EF6EDB1278BB98D008C91B2 /* KeychainSwift */,
+				7EF6EDB4278BB9C6008C91B2 /* NVActivityIndicatorView */,
+				7EF6EDB7278BBA20008C91B2 /* Kingfisher */,
+			);
 			productName = VaxMe;
 			productReference = 540EED2F2676D24B006CF516 /* VaxMe.app */;
 			productType = "com.apple.product-type.application";
@@ -410,6 +398,12 @@
 				Base,
 			);
 			mainGroup = 540EED262676D24B006CF516;
+			packageReferences = (
+				7EF6EDAD278BB963008C91B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7EF6EDB0278BB98D008C91B2 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				7EF6EDB3278BB9C6008C91B2 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				7EF6EDB6278BBA20008C91B2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 540EED302676D24B006CF516 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,48 +426,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1AEDFF90ADA7A35B3730E181 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VaxMe-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8DD124300D4B9E4902AA123 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxMe/Pods-VaxMe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		540EED2B2676D24B006CF516 /* Sources */ = {
@@ -663,7 +615,6 @@
 		};
 		540EED442676D24D006CF516 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16009858029A49A7D0A3C635 /* Pods-VaxMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -683,7 +634,6 @@
 		};
 		540EED452676D24D006CF516 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,6 +673,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EF6EDAD278BB963008C91B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		7EF6EDB0278BB98D008C91B2 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7EF6EDB3278BB9C6008C91B2 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7EF6EDB6278BBA20008C91B2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EF6EDAE278BB963008C91B2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDAD278BB963008C91B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7EF6EDB1278BB98D008C91B2 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDB0278BB98D008C91B2 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		7EF6EDB4278BB9C6008C91B2 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDB3278BB9C6008C91B2 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		7EF6EDB7278BBA20008C91B2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EF6EDB6278BBA20008C91B2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 540EED272676D24B006CF516 /* Project object */;
 }
