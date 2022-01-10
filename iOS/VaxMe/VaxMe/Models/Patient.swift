@@ -9,17 +9,20 @@ import Foundation
 
 struct Patient: Codable {
 //        var id: Int
-    var email: String
+    var slug: String
+    var email: String?
     var lastLogin: String? //optional on sign up and login
     var isSuperuser: Bool
     var username: String
-    var firstName: String
-    var lastName: String
+    var firstName: String?
+    var lastName: String?
     var groups: [String] = []
     var userPermissions: [String] = []
     var isStaff: Bool? //currently not optional when sign up
     var isActive: Bool? //currently not optional when sign up
     var dateJoined: String? //currently not optional when sign up
+    var dob: String?
+    var zip: String?
     
     //MARK: Singleton
     private static var _current: Patient?
@@ -34,6 +37,29 @@ struct Patient: Codable {
             _current = user
             return user
         }
+    }
+    
+    init(logInResponse: LogInResponse) {
+        self.slug = logInResponse.slug
+        let user = logInResponse.user
+        self.firstName = user.firstName
+        self.lastName = user.lastName
+        self.username = user.username
+        self.isSuperuser = false
+    }
+    
+    init(signUpResponse: SignUpResponse) {
+//        self.slug = signUpResponse.slug
+        self.slug = ""
+        self.email = signUpResponse.email
+        self.lastLogin = signUpResponse.lastLogin
+        self.isSuperuser = signUpResponse.isSuperuser
+        self.username = signUpResponse.username
+        self.groups = signUpResponse.groups
+        self.userPermissions = signUpResponse.userPermissions
+        self.isStaff = signUpResponse.isStaff
+        self.isActive = signUpResponse.isActive
+        self.dateJoined = signUpResponse.dateJoined
     }
 }
 

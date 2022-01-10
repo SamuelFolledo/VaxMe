@@ -56,7 +56,7 @@ extension SceneDelegate {
             print("Welcome back \(patient)")
             window.rootViewController = BaseSlidingController()
         } else {
-            let nav = UINavigationController(rootViewController: SignInController())
+            let nav = UINavigationController(rootViewController: WebSignInController())
             window.rootViewController = nav
         }
     }

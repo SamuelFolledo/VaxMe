@@ -46,6 +46,12 @@
 		54CFB5CB26784A31008F741C /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CA26784A31008F741C /* Responses.swift */; };
 		54CFB5CE26784FAA008F741C /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFB5CD26784FAA008F741C /* Defaults.swift */; };
 		6AEA7DAB7E0D84CC3688C0B9 /* Pods_VaxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */; };
+		7EA7F902278688C4009AF23F /* CustomImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */; };
+		7EA7F903278688C4009AF23F /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */; };
+		7EA7F904278688C4009AF23F /* PhotoPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */; };
+		7EA7F905278688C4009AF23F /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */; };
+		7EA7F906278688C4009AF23F /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */; };
+		7EA7F908278688F2009AF23F /* WebSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7F907278688F2009AF23F /* WebSignInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +97,12 @@
 		54CFB5CA26784A31008F741C /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		54CFB5CD26784FAA008F741C /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		552000FF097CDFCD6E660EAD /* Pods_VaxMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImagePickerController.swift; sourceTree = "<group>"; };
+		7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoPickerCell.xib; sourceTree = "<group>"; };
+		7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
+		7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
+		7EA7F907278688F2009AF23F /* WebSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSignInController.swift; sourceTree = "<group>"; };
 		DF31B37ABCFF4852757B3979 /* Pods-VaxMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxMe.release.xcconfig"; path = "Target Support Files/Pods-VaxMe/Pods-VaxMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				541E6B2D2676D9B9008309B0 /* SignInController.swift */,
+				7EA7F907278688F2009AF23F /* WebSignInController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -297,6 +310,8 @@
 		541E6B542676DE2D008309B0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7EA7F8FB278688C4009AF23F /* CustomImagePicker */,
+				7EA7F901278688C4009AF23F /* FinishSignUpViewController.swift */,
 				541E6B2F2676D9C3008309B0 /* SignUpController.swift */,
 			);
 			path = SignUp;
@@ -329,6 +344,25 @@
 				54CFB5C826784A2A008F741C /* Patient.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7EA7F8FB278688C4009AF23F /* CustomImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7F8FC278688C4009AF23F /* CustomImagePickerController.swift */,
+				7EA7F8FD278688C4009AF23F /* ProfileImageView.swift */,
+				7EA7F8FE278688C4009AF23F /* Cell */,
+			);
+			path = CustomImagePicker;
+			sourceTree = "<group>";
+		};
+		7EA7F8FE278688C4009AF23F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7F8FF278688C4009AF23F /* PhotoPickerCell.xib */,
+				7EA7F900278688C4009AF23F /* PhotoPickerCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA7F904278688C4009AF23F /* PhotoPickerCell.xib in Resources */,
 				540EED3F2676D24D006CF516 /* LaunchScreen.storyboard in Resources */,
 				540EED492676D7AD006CF516 /* Assets.xcassets in Resources */,
 				540EED3A2676D24B006CF516 /* Main.storyboard in Resources */,
@@ -451,6 +486,7 @@
 				541E6B422676DABD008309B0 /* Constants.swift in Sources */,
 				541E6B262676D842008309B0 /* ScanController.swift in Sources */,
 				541E6B522676DB92008309B0 /* AppService.swift in Sources */,
+				7EA7F908278688F2009AF23F /* WebSignInController.swift in Sources */,
 				541E6B4C2676DABD008309B0 /* UserDefaults+Extensions.swift in Sources */,
 				541E6B232676D835008309B0 /* ProfileController.swift in Sources */,
 				541E6B432676DABD008309B0 /* UIViewController+Extensions.swift in Sources */,
@@ -469,14 +505,18 @@
 				541E6B1B2676D7F1008309B0 /* BaseSlidingController.swift in Sources */,
 				54CFB5CE26784FAA008F741C /* Defaults.swift in Sources */,
 				541E6B2E2676D9B9008309B0 /* SignInController.swift in Sources */,
+				7EA7F902278688C4009AF23F /* CustomImagePickerController.swift in Sources */,
 				541E6B5F2676E444008309B0 /* UIWindow+Extensions.swift in Sources */,
 				541E6B462676DABD008309B0 /* UIFont+Extensions.swift in Sources */,
 				541E6B1D2676D814008309B0 /* HomeController.swift in Sources */,
+				7EA7F905278688C4009AF23F /* PhotoPickerCell.swift in Sources */,
 				541E6B492676DABD008309B0 /* UIImage+Extensions.swift in Sources */,
 				541E6B592676E0E0008309B0 /* MenuOptionCell.swift in Sources */,
+				7EA7F903278688C4009AF23F /* ProfileImageView.swift in Sources */,
 				541E6B4B2676DABD008309B0 /* UIStackView+Extensions.swift in Sources */,
 				541E6B482676DABD008309B0 /* UIColor+Extensions.swift in Sources */,
 				541E6B562676E0C2008309B0 /* MenuController.swift in Sources */,
+				7EA7F906278688C4009AF23F /* FinishSignUpViewController.swift in Sources */,
 				54CFB5C22677DE43008F741C /* APIManager.swift in Sources */,
 				541E6B472676DABD008309B0 /* UITextView+Extensions.swift in Sources */,
 				54CFB5C926784A2A008F741C /* Patient.swift in Sources */,

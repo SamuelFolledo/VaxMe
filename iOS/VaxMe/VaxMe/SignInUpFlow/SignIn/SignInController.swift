@@ -26,84 +26,30 @@ class SignInController: UIViewController {
     //MARK: Views
     
     lazy var usernameTextfield: UITextField = {
-        let textField = UITextField()
-//        textField.placeholder = "Enter email"
-        let placeHolder = NSAttributedString(string: "Enter username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
-        textField.attributedPlaceholder = placeHolder
-        textField.font = .font(size: 18, weight: .medium, design: .rounded)
-        textField.textColor = .black
-        textField.backgroundColor = UIColor(r: 242, g: 242, b: 242, a: 1)
-        textField.setPadding(left: 15, right: 15)
-        textField.layer.cornerRadius = 10
-        textField.textAlignment = .left
-        textField.returnKeyType = .next
-        textField.keyboardType = .emailAddress
-        textField.autocapitalizationType = .none
-        textField.tintColor = .systemPink
-        textField.clearButtonMode = .whileEditing
-        return textField
+        return AppService.createTextField(type: .username)
     }()
     
     lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-//        textField.placeholder = "Password"
-        let placeHolder = NSAttributedString(string: "Enter password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
-        textField.attributedPlaceholder = placeHolder
-        textField.font = .font(size: 18, weight: .medium, design: .rounded)
-        textField.textColor = .black
-        textField.backgroundColor = UIColor(r: 242, g: 242, b: 242, a: 1)
-        textField.setPadding(left: 15, right: 15)
-        textField.layer.cornerRadius = 10
-        textField.textAlignment = .left
-        textField.returnKeyType = .next
-        textField.keyboardType = .default
-        textField.isSecureTextEntry = true //TODO: - Ben Set this base on the Hide and Unhide feature
-        textField.autocapitalizationType = .none
-        textField.tintColor = .systemPink
-        textField.clearButtonMode = .whileEditing
-        return textField
+        return AppService.createTextField(type: .password)
     }()
     
     lazy var signInButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.layer.cornerRadius = 10
-        button.layer.masksToBounds = false
-        button.frame = CGRect(x: 0, y: 0, width: 85, height: 45)
-        button.setTitleColor(.systemBackground, for: .normal)
-        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        button.backgroundColor = .systemPink
-        button.setTitle("Sign In", for: .normal)
+        let buttonTitle = "Sign In"
+        let button = AppService.createButton(type: .primaryButton(title: buttonTitle))
         button.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
         return button
     }()
     
     var socialProfilesLabel: UILabel = {
-        let label: UILabel = UILabel()
-        label.font = .font(size: 12, weight: .regular, design: .default)
-        label.textColor = .label
-        label.numberOfLines = 2
-        label.textAlignment = .left
-        label.text = "## TODO: for \"or use one of your social profiles\""
+        let text = "## TODO: for \"or use one of your social profiles\""
+        let label = AppService.createLabel(type: .small(text: text))
         return label
     }()
     
     lazy var signUpButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.layer.cornerRadius = 10
-        button.layer.masksToBounds = false
-        button.frame = CGRect(x: 0, y: 0, width: 85, height: 45)
-        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        button.setTitleColor(.systemPink, for: .normal)
-        button.setTitle("Sign Up", for: .normal)
+        let buttonTitle = "No account? Create here"
+        let button = AppService.createButton(type: .secondaryButton(title: buttonTitle))
         button.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
-        //add border
-        button.layer.cornerRadius = 5
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.systemPink.withAlphaComponent(0.9).cgColor
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-        button.clipsToBounds = true
         return button
     }()
     
@@ -122,8 +68,8 @@ extension SignInController {
         view.backgroundColor = .systemBackground
         let stackView = UIStackView(axis: .vertical, spacing: 16, distribution: .fill, alignment: .center)
         view.addSubview(stackView)
-        usernameTextfield.text = "Samuel"
-        passwordTextField.text = "PassMe123"
+        usernameTextfield.text = "admin"
+        passwordTextField.text = "ad"
         stackView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(8)
             $0.centerX.equalToSuperview()
@@ -154,7 +100,6 @@ extension SignInController {
     //MARK: @OBJC func
     @objc func signInButtonTapped() {
         //MARK: - TODO - Ben Clean email and other texts here
-        print("Continue Sign In todo - Samuel")
         APIService.signIn(username: usernameTextfield.text!, password: passwordTextField.text!) { result in
             switch result {
             case .failure(let error):
